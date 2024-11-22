@@ -1,76 +1,94 @@
 # MAST5112-PART3
-AddedItems Module
-This module provides functionality for managing menu items in the application, including listing, removing, and toggling themes.
+# Project Setup and Installation Guide
 
-Table of Contents
-Overview
-Features
-Changelog
-Changes Since Part 2
-Refactoring Changes
-Setup and Usage
-Contributing
-Overview
-The AddedItems screen provides a user-friendly interface for managing menu items. The chef can view, delete, and customize the display mode using dark and light themes.
+Welcome to the Golden Pallete Resturant! Follow the steps below to set up and run the application locally. This README also includes the changelog for recent updates and refactoring.
 
-Features
-Displays a list of menu items dynamically.
-Allows deletion of menu items with a confirmation prompt.
-Enables switching between dark and light themes.
-Enhanced layout for a wider and cleaner interface.
-Changelog
-Changes Since Part 2
-Added a FlatList for dynamic menu rendering:
+## Table of Contents
+- [Setup Instructions](#setup-instructions)
+- [Changelog](#changelog)
+- [Contributors](#contributors)
+- [License](#license)
 
-Introduced a FlatList component to render the menu items dynamically.
-Implemented deletion functionality:
+---
 
-Added the ability to delete menu items with a confirmation prompt.
-Dark/Light Theme Toggle:
+## Setup Instructions
 
-Introduced a theme toggle button allowing users to switch between dark and light modes.
-Logout Button:
+To get started with the project, follow these steps:
 
-Added a logout button for user session management. (Currently displays a message; backend logic can be added.)
-Back Navigation:
+```bash
+# Clone the repository
+git clone github.com/ST10450068/MAST5112-PART3
 
-Implemented a back button to navigate to the Chef's home screen.
-Refactoring Changes
-Optimized Styles:
+# Navigate to the project directory
+cd project_directory
 
-Reduced unnecessary padding and margins for better screen utilization.
-Enhanced styles to support dynamic layout changes between themes.
-Improved Header Layout:
+# Install the dependencies
+npm install
+# Open the AddedItems.js file to ensure assets such as the chef hat icon are correctly linked
 
-Centered the header title and reduced padding around header components for a cleaner look.
-Maximized Screen Space:
 
-Adjusted contentContainerStyle in FlatList and minimized padding to make the interface appear wider.
-Introduced Error Handling for Empty Lists:
+```
+**Important**: Make sure all dependencies are installed before running the app.
+*Note*: If you encounter any issues, feel free to open an issue.
+---
+## Screenshots:
+![Screenshot 2024-11-22 103510](https://github.com/user-attachments/assets/917bcd4d-473f-4000-8448-ddcc41ecd2b8)
+![Screenshot 2024-11-22 103536](https://github.com/user-attachments/assets/c5c23cf9-f4e2-44ab-b0e7-fbfdb4d081f7)
+![Screenshot 2024-11-22 103716](https://github.com/user-attachments/assets/64f608b1-6a72-4c7a-95aa-73350a43f7ea)
+![Screenshot 2024-11-22 103810](https://github.com/user-attachments/assets/da20a359-9b07-4e46-a64f-5f741ec622b3)
+---
 
-Added logic to handle cases where menu items are empty or deletion attempts fail.
-Dynamic Delete Confirmation:
 
-Incorporated password verification before menu item deletion to add an extra layer of security.
-Improved Component Structure:
 
-Refactored and simplified redundant code for easier maintenance and readability.
-Setup and Usage
-Clone the repository and install dependencies:
 
-bash
-Copy code
-git clone <repository_url>  
-cd project_directory  
-npm install  
-Navigate to the AddedItems.js file and ensure assets such as the chef hat icon are correctly linked.
+## Changelog
+Part 3 Changes (Refactoring and Updates)
+Here’s a list of all the changes made since Part 2 and the additional refactorings:
+---
 
-Run the app:
+### New Features:
+- **Dark Mode Toggle**: Added a toggle button to switch between light and dark modes.
+- **Add/Remove Menu Items**: Implemented functionality to dynamically add and remove items from the menu.
+- **Password Protected Deletion**: Added password protection when deleting menu items (password: `1234`).
 
-bash
-Copy code
-npm start  
-Contributing
-This module was developed by Griffin aka Kabelo Kgosana. Contributions and suggestions are welcome.
+### Refactoring:
+- **Code Structure**: Improved code modularity by separating concerns, especially in state management.
+- **Optimized Rendering**: Enhanced performance by reducing unnecessary re-renders in the menu list using React hooks.
+- **UI Updates**: Updated button styles and layout for better user experience, including clearer visual feedback on actions.
 
+### Bug Fixes:
+- **Asset Path Fixes**: Fixed issues with incorrect asset paths for images in the menu list (e.g., the chef hat icon).
+- **State Management**: Corrected some issues where the state was not updating correctly when deleting or adding menu items.
+
+---
+## Contributors
+
+
+- **Griffin (aka Kabelo Kgosana)**: Lead Developer & Contributor
+
+I truly appreciate ymy efforts in making this project better!
+
+## License
+
+This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for more details.
+
+---
+## Styling Summary
+
+This README utilizes various Markdown styles to ensure clarity and enhance the presentation:
+
+- **Code Blocks**: Used to display commands or code snippets (e.g., `git clone`, `npm install`).
+- **Headers**: Organize content into clearly defined sections (e.g., `## Setup Instructions`, `## Changelog`).
+- **Bold Text**: Highlights important information such as warnings or key actions.
+- **Italic Text**: Adds emphasis to specific details or notes.
+- **Lists**: Both ordered and unordered lists for step-by-step instructions and features.
+- **Blockquotes**: Used to emphasize important notes, warnings, or quotes.
+- **Images**: Included to showcase visual elements of the project (e.g., the chef hat icon).
+- **Task Lists**: Track completed and pending tasks for project progress.
+
+---
+
+## YouTube Link
+
+[Click here to view the video tutorial](https://youtu.be/w2ldt9baY-A)
 
